@@ -1,0 +1,5 @@
+---
+dependencies:
+  - role: gpstathis.elasticsearch
+    elasticsearch_install_java: false
+    elasticsearch_apt_dependencies: [ sudo ]

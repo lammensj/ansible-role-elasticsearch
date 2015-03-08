@@ -1,0 +1,3 @@
+# Enable java via a variable and not via a role parameter to avoid running the
+# role multiple times.
+base_java_openjdk: true

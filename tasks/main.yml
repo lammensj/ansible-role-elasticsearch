@@ -1,0 +1,3 @@
+---
+- name: Enabling Elasticsearch service
+  service: name=elasticsearch enabled=true
