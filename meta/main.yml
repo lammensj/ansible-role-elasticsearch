@@ -4,4 +4,4 @@ dependencies:
     elasticsearch_install_java: false
     elasticsearch_apt_dependencies: [ sudo ]
     elasticsearch_java_opts: "-Djava.net.preferIPv4Stack=true"
-
+    elasticsearch_version: 1.3.4
