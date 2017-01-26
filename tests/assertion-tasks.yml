@@ -1,0 +1,7 @@
+# Include for for tasks containing test assertions.
+---
+- name: Assert that elasticsearch port is open
+  shell: >
+    netstat -tunlp | grep ":{{ elasticsearch_network_http_port | default('9200') }} "
+  tags: assert
+
