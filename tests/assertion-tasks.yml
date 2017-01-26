@@ -1,7 +1,8 @@
 # Include for for tasks containing test assertions.
 ---
 - name: Assert that elasticsearch port is open
-  shell: >
-    netstat -tunlp | grep ":{{ elasticsearch_http_port }}"
+  wait_for:
+    port: "{{ elasticsearch_http_port }}"
+    timeout: 30
   tags: assert
 
