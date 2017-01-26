@@ -2,6 +2,6 @@
 ---
 - name: Assert that elasticsearch port is open
   shell: >
-    netstat -tunlp | grep ":{{ elasticsearch_network_http_port | default('9200') }} "
+    netstat -tunlp | grep ":{{ elasticsearch_http_port }}"
   tags: assert
 
