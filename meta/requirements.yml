@@ -5,5 +5,5 @@
   name: drunomics.java
 
 # Use our fork for ansible 2.2. compatibility.
-- src: git@github.com:drunomics/ansible-elasticsearch.git
+- src: https://github.com/drunomics/ansible-elasticsearch
   name: gpstathis.elasticsearch
