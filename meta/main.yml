@@ -1,5 +1,5 @@
 ---
 dependencies:
-  - role: geerlingguy.elasticsearch
-    java_packages:
-      - openjdk-7-jre-headless
+  - role: drunomics.java
+    # Install oracle java 8.
+    java_openjdk: false
