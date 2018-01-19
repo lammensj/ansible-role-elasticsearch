@@ -1,5 +1,21 @@
 ---
 dependencies:
-  - role: drunomics.java
+  - role: geerlingguy.java
     # Install oracle java 8.
-    java_openjdk: false
+    java_packages:
+      - openjdk-8-jdk
+
+galaxy_info:
+  author: lammensj
+  description: Elasticsearch for Linux.
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  galaxy_tags:
+    - web
+    - system
+    - monitoring
+
