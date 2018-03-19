@@ -9,7 +9,7 @@
 
 - name: Add Elasticsearch repository. - 2.x
   apt_repository:
-    repo: 'deb http://packages.elastic.co/elasticsearch/2.x/debian stable main'
+    repo: 'deb http://packages.elastic.co/elasticsearch/{{ elasticsearch_repo_version }}/debian stable main'
     state: present
     update_cache: yes
   when: elasticsearch_repo_version == '2.x'
